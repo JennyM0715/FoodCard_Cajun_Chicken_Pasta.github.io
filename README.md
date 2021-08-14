@@ -12,3 +12,9 @@
 * [Google Fonts - Roboto](https://fonts.google.com/specimen/Roboto)
 * [WEB MD HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [W3schools](https://www.w3schools.com/)
+
+# Live Code
+
+    To view the results from the HTML and CSS source code, click on the link below
+
+* [Food Card - Cajun Chicken Pasta](https://jennym0715.github.io/FoodCard_Cajun_Chicken_Pasta.github.io/)
