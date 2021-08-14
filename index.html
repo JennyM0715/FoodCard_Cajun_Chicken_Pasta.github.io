@@ -1,0 +1,50 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Food card (Cajun Chicken Pasta) | HTML & CSS</title>
+        <!---Specify the character encoding for the HTML document----->
+        <meta charset="UTF-8">
+
+        <!---------
+            This gives the browser instructions on how to control the page's dimensions and scaling.
+
+            The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+            The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+        ----->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+        <!---container of the entire food card---->
+        <div class="container_card">
+            <!-----the actual food card: food image with the food information----->
+            <div class="food_card">
+                <!----food image----->
+                <img src="cajun_chicken_pasta.png" class="food_card_img" alt="Cajun Chicken Pasta image">
+                <!----information about the food: name, price, description, and order now button----->
+                <div class="food_card_data">
+                    <h1 class="food_card_title">Cajun Chicken Pasta</h1>
+                    <span class="food_card_price">$13.50</span>
+                    <p class="food_card_description">Grilled chicken, penne in Alfredo sauce, topped with chile spices, Parmesan cheese, tomatoes, and green onions. Served with garlic toast.</p>
+                    <!------order now button----->
+                    <a href="#" class="food_card_order_button">Order Now</a>
+                </div>
+                <!----end of food card data section----->
+            </div>
+            <!---end of food card------->
+        </div>
+        <!----end of entire food card container------>
+        </main>
+        <footer>
+            <p> Dish is basically from <a href="https://www.chilis.com/menu/chicken-seafood/cajun-chicken-pasta" target="_blank">Chili's</a> menu because that's one of the main dishes I would order.</p>
+            <!-----script src is js script to automatically update copyright year---->
+            <!---practicing with using a JS script to automatically do it instead of manually going through every HTML file to manually replace the year---->
+            <p>Copyright &copy; <script src="app.js"></script> 
+                Jennifer Martinez
+            </p>
+        </footer>
+    </body>
+</html>

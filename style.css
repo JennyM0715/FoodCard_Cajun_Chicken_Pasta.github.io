@@ -1,0 +1,92 @@
+/*
+ import from Google Fonts (for free)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/* container of the entire food card */
+.container_card{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e; /* Very dark gray */
+}
+
+
+/* the actual food card: food image with the food information */
+.food_card{
+    width: 320px;
+    height: 380px;
+    background-color: #feffe2; /* pale yellow */
+    border-radius: 1rem;
+    padding: 4rem 2rem 0;
+}
+
+/* food image */
+.food_card_img{
+    position: absolute;
+    width: 260px;
+
+    /*  
+        Applies a drop shadow effect to the image.
+        Filters are commonly used to adjust the rendering of images, backgrounds, and borders. 
+    */
+    /*  The drop-shadow() function applies a drop shadow effect to the input image.   */
+    /*  drop-shadow(offset-x | offset-y | blur-radius[optinal] | color[optional])    */
+
+    /*  drop-shadow(offset-x | offset-y |  color[optional])  */
+    filter: drop-shadow(5px 10px 15px rgba(8,9,13,.2));
+
+    /* rotate, scale, skew, or translate an element */
+    transform: translate(.2rem, -8.5rem);
+}
+
+/*
+    information about the food: name, price, description, and order now button
+
+*/
+.food_card_data{
+    transform: translateY(4.8rem);
+}
+
+.food_card_title{
+    font-size: 1.5rem;
+    color: #002366; /* dark blue */
+    margin: 0.5rem;
+}
+
+.food_card_price{
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.food_card_description{
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.food_card_order_button{
+    display: block;
+    width: max-content;
+    padding: 1.125rem 2rem;
+    background-color: #002366;
+    color: #ffff;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+
+footer{
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+}
